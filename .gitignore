@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+tex2pdf.*/
+
+.env
+
+*.pdf
+*.docx
+*.md
+*.tex
+
+Assessment*.html

@@ -1,0 +1,597 @@
+### Extracted Parameters and Their Permissible Limits
+
+#### Tables Information
+
+**Table 1: Stack Source Release Parameters**
+
+| Source      | Release Type | Stack Height (m) | Exit Temp. (°C) | Exit Diameter (m) | Exit Velocity (m/s) | Oxygen Conc. (%) | Moisture Content (%) | Flow Rate (Am³/s) | Flow Rate (Nm³/s) |
+|-------------|--------------|------------------|-----------------|-------------------|---------------------|------------------|----------------------|-------------------|-------------------|
+| Boiler No.1 | Wake-affected | 20               | 150             | 4                 | 15                  | 10               | 15                   | 188.5             | 103.4             |
+
+**Table 2: Stack Emission Concentrations and Regulation Limits**
+
+| Pollutant     | Emission Rate (g/s) | Emission Concentration (mg/Am³) | Corrected Emission Concentration (mg/Nm³ at stack reference conditions) | Regulation Emission Concentration Limit (mg/Nm³ at stack reference conditions) |
+|---------------|---------------------|---------------------------------|-----------------------------------------------------------------------|--------------------------------------------------------------------------------|
+| Sulfur dioxide| 40                  | 212.2                           | N/A                                                                   | N/A                                                                            |
+| Solid particles| 2                  | 10.6                            | 31.6                                                                  | 100                                                                            |
+| Oxides of nitrogen| 15              | 79.6                            | 237.4                                                                 | 350                                                                            |
+
+**Table 3: Peak Odour Emission Rates**
+
+| Source      | Source Type | Odour Emission Rate (OUm³/s) | Stability Class | Peak Odour Emission Rate (OUm³/s) – Near-field | Peak Odour Emission Rate (OUm³/s) – Far-field |
+|-------------|-------------|------------------------------|-----------------|-----------------------------------------------|---------------------------------------------|
+| Lagoon No.1 | Area        | 20,000                       | A, B, C, D       | 50,000                                        | 46,000                                      |
+| "           | "           | "                            | E, F            | 46,000                                        | 38,000                                      |
+
+**Table 4: Wind Speed (m/s) and Stability Class Combinations for a Level 1 Meteorological Data File**
+
+| Stability Class | 0.5 | 1 | 1.5 | 2 | 2.5 | 3 | 3.5 | 4 | 4.5 | 5 | 6 | 7 | 8 | 10 | 12 | 14 | 16 | 18 | 20 |
+|----------------|-----|---|-----|---|-----|---|-----|---|-----|---|---|---|---|----|----|----|----|----|----|
+| A              | *   |   | *   |   | *   |   | *   |   | *   |   | * |   | * |    |    |    |    |    |    |
+| B              | *   |   | *   |   | *   |   | *   |   | *   |   | * |   | * |    |    |    |    |    |    |
+| C              | *   |   | *   |   | *   |   | *   |   | *   |   | * |   | * |    |    |    |    |    |    |
+| D              | *   |   | *   |   | *   |   | *   |   | *   |   | * |   | * |    |    |    |    |    |    |
+| E              | *   |   | *   |   | *   |   | *   |   | *   |   | * |   | * |    |    |    |    |    |    |
+| F              | *   |   | *   |   | *   |   | *   |   | *   |   | * |   | * |    |    |    |    |    |    |
+
+**Table 5: Parameterisation of Golder’s Plot, by Pasquill–Gifford Stability Class**
+
+| Parameter | A      | B      | C      | D      | E      | F       |
+|-----------|--------|--------|--------|--------|--------|---------|
+| X         | -0.096 | -0.037 | -0.002 | 0.000  | 0.004  | 0.035   |
+| Y         | 0.029  | 0.025  | 0.018  | 0.000  | -0.018 | -0.0365 |
+
+**Table 6: Upper and Lower Limits for Surface Roughness Heights for Each Pasquill–Gifford Stability Class**
+
+| Parameter | A    | B    | C    | D    | E    | F    |
+|-----------|------|------|------|------|------|------|
+| Zo min    | 0.001| 0.001| 0.001| 0.001| 0.001| 0.001|
+| Zo max    | 18.0 | 30.0 | 1.25 | 50.0 | 1.6  | 9.0  |
+
+**Table 7: Typical Values of Surface Roughness Height for Various Land-use Categories (AUSPLUME version 6.0)**
+
+| Land-use Category | Roughness Height Zo (m) |
+|-------------------|-------------------------|
+| Hill              | 2.0                     |
+| Industrial area   | 0.8                     |
+| Forest            | 0.8                     |
+| Rolling rural     | 0.4                     |
+| Flat desert       | 0.01                    |
+| High-rise         | 1.0                     |
+| Commercial        | 0.8                     |
+| Residential       | 0.4                     |
+| Flat rural        | 0.1                     |
+| Water             | 0.0001                  |
+
+**Table 8: Typical Mixing Heights for a Rural Location (km), for Different Values of Wind Speed (m/s) and Stability Class (A–F)**
+
+| Wind Speed (m/s) | A  | B  | C  | D  | E | F |
+|------------------|----|----|----|----|---|---|
+| 0.5              | 0.2| 0.2| 0.2| 0.2| 5 | 5 |
+| 1.0              | 0.4| 0.4| 0.3| 0.3| 5 | 5 |
+| 1.5              | 0.6| 0.5| 0.5| 0.4| 5 | 5 |
+| 2.0              | 0.8| 0.7| 0.6| 0.6| 5 | 5 |
+| 2.5              | 1.0| 0.9| 0.8| 0.7| 5 | 5 |
+| 3.0              | 1.2| 1.0| 0.9| 0.8| 5 | 5 |
+| 3.5              | -  | 1.2| 1.1| 1.0| 5 | 5 |
+| 4.0              | -  | 1.4| 1.2| 1.1| 5 | - |
+| 4.5              | -  | 1.6| 1.4| 1.3| 5 | - |
+| 5.0              | -  | 1.8| 1.5| 1.4| 5 | - |
+| 6                | -  | -  | 1.8| 1.7| - | - |
+| 7                | -  | -  | 2.1| 2.0| - | - |
+| 8                | -  | -  | 2.4| 2.2| - | - |
+| 10               | -  | -  | 3.1| 2.8| - | - |
+| 12               | -  | -  | -  | 3.3| - | - |
+| 14               | -  | -  | -  | 3.9| - | - |
+| 16               | -  | -  | -  | 4.5| - | - |
+| 18               | -  | -  | -  | 5.0| - | - |
+| 20               | -  | -  | -  | 5.0| - | - |
+
+**Table 9: Typical Mixing Heights for an Urban Location (km), for Different Values of Wind Speed (m/s) and Stability Class (A–F)**
+
+| Wind Speed (m/s) | A  | B  | C  | D  | E | F |
+|------------------|----|----|----|----|---|---|
+| 0.5              | 0.3| 0.3| 0.2| 0.2| 5 | 5 |
+| 1.0              | 0.6| 0.5| 0.4| 0.4| 5 | 5 |
+| 1.5              | 1.0| 0.8| 0.7| 0.6| 5 | 5 |
+| 2.0              | 1.3| 1.1| 0.9| 0.8| 5 | 5 |
+| 2.5              | 1.6| 1.4| 1.1| 1.1| 5 | 5 |
+| 3.0              | 2.0| 1.7| 1.3| 1.3| 5 | 5 |
+| 3.5              | -  | 1.9| 1.5| 1.5| 5 | 5 |
+| 4.0              | -  | 2.2| 1.8| 1.7| 5 | - |
+| 4.5              | -  | 2.5| 2.0| 1.9| 5 | - |
+| 5.0              | -  | 2.7| 2.2| 2.1| 5 | - |
+| 6                | -  | -  | 2.6| 2.6| - | - |
+| 7                | -  | -  | 3.1| 2.9| - | - |
+| 8                | -  | -  | 3.5| 3.4| - | - |
+| 10               | -  | -  | 4.4| 4.3| - | - |
+| 12               | -  | -  | -  | 5.0| - | - |
+| 14               | -  | -  | -  | 5.0| - | - |
+| 16               | -  | -  | -  | 5.0| - | - |
+| 18               | -  | -  | -  | 5.0| - | - |
+| 20               | -  | -  | -  | 5.0| - | - |
+
+**Impact Assessment Criteria (from Section 7.1)**
+
+| Pollutant          | Impact Assessment Criteria (mg/m³) | Impact Assessment Criteria (ppm) |
+|--------------------|------------------------------------|----------------------------------|
+| Sulfur dioxide (SO₂) | 0.20                               | 0.075                            |
+| Nitrogen dioxide (NO₂) | 0.08                            | 0.03                             |
+| Ozone (O₃)         | 0.10                               | 0.05                             |
+| Lead (Pb)          | 0.0012                             | N/A                              |
+| PM2.5              | 0.025                              | N/A                              |
+| PM10               | 0.050                              | N/A                              |
+| Total suspended particulates (TSP) | 0.090             | N/A                              |
+| Deposited dust     | 0.10 g/m²/month                    | N/A                              |
+| Carbon monoxide (CO) | 10.0                             | 9                                |
+| Hydrogen fluoride (HF) | 0.002                         | 0.0008                           |
+
+**Individual Toxic Air Pollutants (from Table 13)**
+
+| Pollutant          | Impact Assessment Criteria (mg/m³) | Impact Assessment Criteria (ppm) |
+|--------------------|------------------------------------|----------------------------------|
+| Benzene            | 0.030                              | 0.01                             |
+| Formaldehyde       | 0.037                              | 0.03                             |
+| Toluene            | 0.37                               | 0.10                             |
+| Xylene             | 0.22                               | 0.02                             |
+| Vinyl chloride     | 0.005                              | 0.002                            |
+
+**Odorous Air Pollutants (from Table 16)**
+
+| Pollutant          | Impact Assessment Criteria (mg/m³) | Impact Assessment Criteria (ppm) |
+|--------------------|------------------------------------|----------------------------------|
+| Ammonia            | 1.5                                | 2.14                             |
+| Hydrogen sulfide   | 0.005                              | 0.007                            |
+| Styrene            | 0.21                               | 0.05                             |
+| Trimethylamine     | 0.0005                             | 0.0002                           |
+| Methyl mercaptan   | 0.0002                             | 0.0001                           |
+
+### Summary of Extracted Parameters and Limits
+
+**Air Pollutants and Limits**
+
+- **Sulfur dioxide (SO₂)**
+  - Emission concentration: 212.2 mg/Am³
+  - Corrected emission concentration: N/A
+  - Regulation limit: N/A
+  - Impact assessment criterion: 0.20 mg/m³ (0.075 ppm)
+
+- **Solid particles**
+  - Emission concentration: 10.6 mg/Am³
+  - Corrected emission concentration: 31.6 mg/Nm³
+  - Regulation limit: 100 mg/Nm³
+
+- **Oxides of nitrogen (NOₓ)**
+  - Emission concentration: 79.6 mg/Am³
+  - Corrected emission concentration: 237.4 mg/Nm³
+  - Regulation limit: 350 mg/Nm³
+  - Impact assessment criterion for NO₂: 0.08 mg/m³ (0.03 ppm)
+
+- **Lead (Pb)**
+  - Impact assessment criterion: 0.0012 mg/m³
+
+- **PM2.5**
+  - Impact assessment criterion: 0.025 mg/m³
+
+- **PM10**
+  - Impact assessment criterion: 0.050 mg/m³
+
+- **Total suspended particulates (TSP)**
+  - Impact assessment criterion: 0.090 mg/m³
+
+- **Deposited dust**
+  - Impact assessment criterion: 0.10 g/m²/month
+
+- **Carbon monoxide (CO)**
+  - Impact assessment criterion: 10.0 mg/m³ (9 ppm)
+
+- **Hydrogen fluoride (HF)**
+  - Impact assessment criterion: 0.002 mg/m³ (0.0008 ppm)
+
+**Individual Toxic Air Pollutants**
+
+- **Benzene**
+  - Impact assessment criterion: 0.030 mg/m³ (0.01 ppm)
+
+- **Formaldehyde**
+  - Impact assessment criterion: 0.037 mg/m³ (0.03 ppm)
+
+- **Toluene**
+  - Impact assessment criterion: 0.37 mg/m³ (0.10 ppm)
+
+- **Xylene**
+  - Impact assessment criterion: 0.22 mg/m³ (0.02 ppm)
+
+- **Vinyl chloride**
+  - Impact assessment criterion: 0.005 mg/m³ (0.002 ppm)
+
+**Odorous Air Pollutants**
+
+- **Ammonia**
+  - Impact assessment criterion: 1.5 mg/m³ (2.14 ppm)
+
+- **Hydrogen sulfide**
+  - Impact assessment criterion: 0.005 mg/m³ (0.007 ppm)
+
+- **Styrene**
+  - Impact assessment criterion: 0.21 mg/m³ (0.05 ppm)
+
+- **Trimethylamine**
+  - Impact assessment criterion: 0.0005 mg/m³ (0.0002 ppm)
+
+- **Methyl mercaptan**
+  - Impact assessment criterion: 0.0002 mg/m³ (0.0001 ppm)
+
+This summary includes all the specified parameters and permissible limits from the provided document.
+### Extracted Parameters and Permissible Limits
+
+#### 1. Meteorological Data Requirements:
+- **TAPM Version**: 2.0 or later
+- **Terrain Height Database**: GEODATA 9-second (~250 m)
+- **Horizontal Grid Points**: 25 by 25
+- **Vertical Levels**: 25
+- **Outer Grid Distance**: 30 km (with nesting grids of 10 km, 3 km, and 1 km)
+- **Advanced Meteorological Inputs**: TAPM defaults
+
+#### 2. Background Air Quality Data:
+- **Assessment Criteria for Pollutants**:
+  - **Sulfur Dioxide (SO2)**:
+    - 1 hour: 10 pphm (286 µg/m³) or 7.5 pphm (215 µg/m³) for assessments prepared after 1 January 2025
+    - 24 hours: 2 pphm (57 µg/m³)
+  - **Nitrogen Dioxide (NO2)**:
+    - 1 hour: 8 pphm (164 µg/m³)
+    - Annual: 1.5 pphm (31 µg/m³)
+  - **Ozone (O3)**:
+    - 8 hours: 6.5 pphm (139 µg/m³)
+  - **Lead (Pb)**:
+    - Annual: 0.5 µg/m³
+  - **PM2.5**:
+    - 24 hours: 25 µg/m³
+    - Annual: 8 µg/m³
+  - **PM10**:
+    - 24 hours: 50 µg/m³
+    - Annual: 25 µg/m³
+  - **Total Suspended Particulates (TSP)**:
+    - Annual: 90 µg/m³
+  - **Deposited Dust**:
+    - Annual: 2 g/m²/month (maximum increase)
+    - Annual: 4 g/m²/month (maximum total)
+  - **Carbon Monoxide (CO)**:
+    - 15 minutes: 87 ppm (100 mg/m³)
+    - 1 hour: 25 ppm (30 mg/m³)
+    - 8 hours: 9 ppm (10 mg/m³)
+  - **Hydrogen Fluoride (HF)**:
+    - 90 days: 0.5 µg/m³ (general land use), 0.25 µg/m³ (specialised land use)
+    - 30 days: 0.84 µg/m³ (general land use), 0.4 µg/m³ (specialised land use)
+    - 7 days: 1.7 µg/m³ (general land use), 0.8 µg/m³ (specialised land use)
+    - 24 hours: 2.9 µg/m³ (general land use), 1.5 µg/m³ (specialised land use)
+
+#### 3. Impact Assessment Criteria for Individual Toxic Air Pollutants:
+- **Acrolein**: 1 hour: 0.00042 mg/m³ (0.00018 ppm)
+- **Acrylonitrile**: 1 hour: 0.008 mg/m³ (0.0037 ppm)
+- **Alpha chlorinated toluenes and benzoyl chloride**: 1 hour: 0.009 mg/m³ (0.0018 ppm)
+- **Arsenic and compounds**: 1 hour: 0.00009 mg/m³
+- **Asbestos**: 1 hour: 0.18 mg/m³
+- **Benzene**: 1 hour: 0.029 mg/m³ (0.009 ppm)
+- **Beryllium and beryllium compounds**: 1 hour: 0.000004 mg/m³
+- **1,3-butadiene**: 1 hour: 0.04 mg/m³ (0.018 ppm)
+- **Cadmium and cadmium compounds**: 1 hour: 0.000018 mg/m³
+- **Chromium VI compounds**: 1 hour: 0.00009 mg/m³
+- **1,2-dichloroethane (ethylene dichloride)**: 1 hour: 0.07 mg/m³ (0.018 ppm)
+- **Dioxins and furans**: 1 hour: 2.0E–09 mg/m³
+- **Epichlorohydrin**: 1 hour: 0.014 mg/m³ (0.0037 ppm)
+- **Ethylene oxide**: 1 hour: 0.0033 mg/m³ (0.0018 ppm)
+- **Formaldehyde**: 1 hour: 0.02 mg/m³ (0.018 ppm)
+- **Hydrogen cyanide**: 1 hour: 0.20 mg/m³ (0.18 ppm)
+- **MDI (diphenylmethane diisocyanate)**: 1 hour: 0.00004 mg/m³
+- **Nickel and nickel compounds**: 1 hour: 0.00018 mg/m³ (0.00009 ppm)
+- **Polycyclic aromatic hydrocarbon (as benzo[a]pyrene)**: 1 hour: 0.0004 mg/m³
+- **Pentachlorophenol**: 1 hour: 0.0009 mg/m³
+- **Phosgene**: 1 hour: 0.007 mg/m³ (0.0018 ppm)
+- **Propylene oxide**: 1 hour: 0.09 mg/m³ (0.037 ppm)
+- **TDI (toluene-2,4-diisocyanate; toluene-2,6-diisocyanate)**: 1 hour: 0.00004 mg/m³
+- **Trichloroethylene**: 1 hour: 0.5 mg/m³ (0.09 ppm)
+- **Vinyl chloride**: 1 hour: 0.024 mg/m³ (0.009 ppm)
+
+#### 4. Potency Equivalency Factors (PEFs) for PAHs:
+- **Benzo[a]pyrene**: 1
+- **Benzo[a]anthracene**: 0.1
+- **Benzo[b]fluoranthene**: 0.1
+- **Benzo[j]fluoranthene**: 0.1
+- **Benzo[k]fluoranthene**: 0.1
+- **Bibenz[a,j]acridine**: 0.1
+- **Bibenz[a,h]acridine**: 0.1
+- **7h-dibenzo[c,g]carbazole**: 1
+- **Dibenzo[a,e]pyrene**: 1
+- **Dibenzo[a,h]pyrene**: 10
+- **Dibenzo[a,i]pyrene**: 10
+- **Dibenzo[a,l]pyrene**: 10
+- **5-nitroacenaphthene**: 0.01
+- **Indeno[1,2,3-cd]pyrene**: 0.1
+- **5-methylchrysene**: 1
+- **1-nitropyrene**: 0.1
+- **4-nitropyrene**: 0.1
+- **1,6-dinitropyrene**: 10
+- **1,8-dinitropyrene**: 1
+- **6-nitrocrysene**: 10
+- **2-nitrofluorene**: 0.01
+- **Chrysene**: 0.01
+- **Dibenz[a,h]anthracene**: 0.4
+- **7,12-dimethylbenzanthracene**: 21.8
+- **3-methylcholanthrene**: 1.9
+
+#### 5. Individual Odorous Air Pollutants:
+- **Hydrogen Sulfide**: Impact assessment criterion (µg/m³) = (log10 (population) – 4.5) / –0.87
+- **Various Odorous Air Pollutants**:
+  - **Acetaldehyde**: 1 hour: 0.042 mg/m³ (0.023 ppm)
+  - **Acetic acid**: 1 hour: 0.27 mg/m³ (0.11 ppm)
+  - **n-butanol**: 1 hour: 0.5 mg/m³ (0.16 ppm)
+  - **n-butyl acetate**: 1 hour: 1.02 mg/m³ (0.21 ppm)
+  - **Butyl acrylate**: 1 hour: 0.10 mg/m³ (0.019 ppm)
+  - **Butyl mercaptan**: 1 hour: 0.007 mg/m³ (0.002 ppm)
+  - **Carbon disulfide**: 1 hour: 0.07 mg/m³ (0.023 ppm)
+  - **Chlorobenzene**: 1 hour: 0.1 mg/m³ (0.023 ppm)
+  - **Cumene (isopropyl benzene)**: 1 hour: 0.021 mg/m³ (0.004 ppm)
+  - **Cyclohexanone**: 1 hour: 0.26 mg/m³ (0.07 ppm)
+  - **Diacetone alcohol**: 1 hour: 0.7 mg/m³ (0.15 ppm)
+  - **Diethylamine**: 1 hour: 0.03 mg/m³ (0.01 ppm)
+  - **Dimethylamine**: 1 hour: 0.009 mg/m³ (0.0052 ppm)
+  - **Diphenyl ether**: 1 hour: 0.08 mg/m³ (0.01 ppm)
+  - **Ethanol**: 1 hour: 2.1 mg/m³ (1.1 ppm)
+  - **Ethyl acetate**: 1 hour: 12.1 mg/m³ (3.5 ppm)
+  - **Ethyl acrylate**: 1 hour: 0.0004 mg/m³ (0.0001 ppm)
+  - **Methanol**: 1 hour: 3.0 mg/m³ (2.4 ppm)
+  - **Methylamine**: 1 hour: 0.0027 mg/m³ (0.0023 ppm)
+  - **Methyl ethyl ketone**: 1 hour: 3.2 mg/m³ (1.1 ppm)
+  - **Methyl isobutyl ketone**: 1 hour: 0.23 mg/m³ (0.05 ppm)
+  - **Methyl mercaptan**: 1 hour: 0.00046 mg/m³ (0.00023 ppm)
+  - **Methyl methacrylate**: 1 hour: 0.12 mg/m³ (0.027 ppm)
+  - **Methyl styrene**: 1 hour: 0.14 mg/m³ (0.028563 ppm)
+  - **Nitrobenzene**: 1 hour: 0.0026 mg/m³ (0.00052 ppm)
+  - **Perchlorethylene (tetrachloroethylene)**: 1 hour: 3.5 mg/m³ (0.52 ppm)
+  - **Phenol**: 1 hour: 0.020 mg/m³ (0.0052 ppm)
+  - **Phosphine**: 1 hour: 0.0031 mg/m³ (0.0023 ppm)
+  - **n-propanol**: 1 hour: 0.041 mg/m³ (0.016 ppm)
+  - **Pyridine**: 1 hour: 0.007 mg/m³ (0.0023 ppm)
+  - **Styrene (monomer)**: 1 hour: 0.12 mg/m³ (0.027 ppm)
+  - **Toluene**: 1 hour: 0.36 mg/m³ (0.09 ppm)
+  - **Triethylamine**: 1 hour: 0.20 mg/m³ (0.05 ppm)
+  - **Xylenes**: 1 hour: 0.19 mg/m³ (0.04 ppm)
+
+#### 6. Risk and Hazard Index Acceptance Criteria:
+- **Carcinogenic Risk (CR)**:
+  - Acceptable: Less than 1 in 1 million (1 × 10–6)
+  - Require best practice for air toxics and CR < 1 in 1 million and HI < 0.2: 1 in 1 million to 1 in 10 thousand (1 × 10–6 to 1 × 10–4)
+  - Not acceptable: Greater than 1 in 10 thousand (1 × 10–4)
+- **Acute and Chronic Non-Carcinogenic Hazard Index (HI)**:
+  - Acceptable: Less than 0.2
+  - Require best practice for air toxics and CR < 1 in 1 million and HI < 0.2: 0.2 to 10
+  - Not acceptable: Greater than 10
+### Parameters and Their Permissible Limits
+
+#### Table 17: Impact Assessment Criteria for Hydrogen Sulfide (Nose-Response-Time Average, 99th Percentile)
+| Population of Affected Community    | Impact Assessment Criteria (µg/m³) |
+|-------------------------------------|------------------------------------|
+| Urban (≥~2000)                      | 1.38                               |
+| ~500                                | 2.07                               |
+| ~125                                | 2.76                               |
+| ~30                                 | 3.45                               |
+| ~10                                 | 4.14                               |
+| Single residence (≤~2)              | 4.83                               |
+
+#### Table 18: Impact Assessment Criteria for Complex Mixtures of Odorous Air Pollutants (Nose-Response-Time Average, 99th Percentile)
+| Population of Affected Community    | Impact Assessment Criteria for Complex Mixtures of Odorous Air Pollutants (OU) |
+|-------------------------------------|-------------------------------------------------------------------------------|
+| Urban (≥~2000) and/or schools and hospitals | 2.0                                                                 |
+| ~500                                | 3.0                                                                 |
+| ~125                                | 4.0                                                                 |
+| ~30                                 | 5.0                                                                 |
+| ~10                                 | 6.0                                                                 |
+| Single rural residence (≤~2)        | 7.0                                                                 |
+
+#### Table 23: Common Conversion Factors for Criteria Air Pollutants
+| Pollutant                | Units    | To Convert to:         | Multiply by: |
+|--------------------------|----------|------------------------|--------------|
+| Ozone (O3)               | pphm     | µg/m³ (0°C)            | 21.4         |
+|                          |          | µg/m³ (25°C)           | 19.6         |
+| Nitric oxide (NO)        | pphm     | µg/m³ (0°C)            | 13.4         |
+|                          |          | µg/m³ (25°C)           | 12.3         |
+| Nitrogen dioxide (NO2)   | pphm     | µg/m³ (0°C)            | 20.5         |
+|                          |          | µg/m³ (25°C)           | 18.8         |
+| Sulfur dioxide (SO2)     | pphm     | µg/m³ (0°C)            | 28.6         |
+|                          |          | µg/m³ (25°C)           | 26.2         |
+| Lead (Pb)                | µg/m³    | µg/m³ (0°C)            | 0.92         |
+| Carbon monoxide (CO)     | ppm      | mg/m³ (0°C)            | 1.25         |
+|                          |          | mg/m³ (25°C)           | 1.15         |
+
+#### Table 19: Source Characteristics (Worked Example 1)
+| Source Characteristic     | Value     |
+|---------------------------|-----------|
+| Stack height (m)          | 40        |
+| Stack diameter (m)        | 1         |
+| Exhaust temperature (°C)  | 180       |
+| Exhaust velocity (m/s)    | 20        |
+| Building wake effects     | No        |
+| Exhaust flow rate – Am³/s | 15.71     |
+| Exhaust flow rate – Nm³/s | 9.47      |
+| Hydrogen sulfide emission concentration – mg/Am³ | 21.0 |
+| Hydrogen sulfide emission concentration – mg/Nm³ | 34.8 |
+| Hydrogen sulfide emission rate (g/s) | 0.33 |
+| Location                  | Rural     |
+| Terrain                   | Flat      |
+| Roughness height (m)      | 0.3       |
+| Location of nearest sensitive receptor (m) | 2,950 |
+
+#### Table 20: Maximum Impact (Worked Example 2)
+| Particulates (PM10)       | Predicted Concentration (µg/m³) | Maximum Impact (Increment) | Impact Assessment Criterion (µg/m³) |
+|---------------------------|---------------------------------|----------------------------|-------------------------------------|
+| A: 1000 m north           | 63 (22)                         |                            | 50                                  |
+| B: 1500 m west            | 49 (8)                          |                            | 50                                  |
+| 24-hour average           | 63 (22)                         |                            | 50                                  |
+| Annual average            | 24 (2)                          |                            | 25                                  |
+| Annual average            | 23 (1)                          |                            | 25                                  |
+
+#### Table 21: Summary of Contemporaneous Impact and Background – Days with Highest Background (Worked Example 2)
+| Date       | Background – PM10 24-hour average (µg/m³) | Predicted Increment – PM10 24-hour average (µg/m³) | Total |
+|------------|-------------------------------------------|---------------------------------------------------|-------|
+| 27/01/01   | 41                                        | 5                                                 | 46    |
+| 26/01/01   | 40                                        | 3                                                 | 43    |
+| 08/10/01   | 40                                        | 5                                                 | 45    |
+| 04/03/01   | 38                                        | 8                                                 | 46    |
+| 02/02/01   | 37                                        | 10                                                | 47    |
+| 31/05/01   | 36                                        | 12                                                | 48    |
+| 06/08/01   | 34                                        | 10                                                | 44    |
+| 09/10/01   | 34                                        | 8                                                 | 42    |
+
+#### Table 22: Summary of Contemporaneous Impact and Background – Days with Highest Predicted Increment (Worked Example 2)
+| Date       | Background – PM10 24-hour average (µg/m³) | Highest Predicted Increment – PM10 24-hour average (µg/m³) | Total |
+|------------|-------------------------------------------|-----------------------------------------------------------|-------|
+| 23/05/01   | 20                                        | 22                                                        | 42    |
+| 15/09/01   | 21                                        | 18                                                        | 39    |
+| 25/09/01   | 15                                        | 17                                                        | 32    |
+| 24/02/01   | 30                                        | 17                                                        | 47    |
+| 04/01/01   | 34                                        | 15                                                        | 49    |
+| 12/04/01   | 29                                        | 14                                                        | 43    |
+| 14/11/01   | 34                                        | 13                                                        | 47    |
+| 13/02/01   | 30                                        | 11                                                        | 41    |
+
+#### Table 19: Source Characteristics (Worked Example 1)
+| Source Characteristic | Value |
+|-----------------------|-------|
+| Stack Height (m) | 40 |
+| Stack Diameter (m) | 1 |
+| Exhaust Temperature (°C) | 180 |
+| Exhaust Velocity (m/s) | 20 |
+| Building Wake Effects | No |
+| Exhaust Flow Rate – Am³/s | 15.71 |
+| Exhaust Flow Rate – Nm³/s | 9.47 |
+| Hydrogen Sulfide Emission Concentration – mg/Am³ | 21.0 |
+| Hydrogen Sulfide Emission Concentration – mg/Nm³ | 34.8 |
+| Hydrogen Sulfide Emission Rate (g/s) | 0.33 |
+| Location | Rural |
+| Terrain | Flat |
+| Roughness Height (m) | 0.3 |
+| Location of Nearest Sensitive Receptor (m) | 2,950 |
+
+#### Example of Developing Site-Specific Emission Limits (Worked Example 1)
+- **Scenario**: Proposed industry near Deniliquin emitting hydrogen sulfide through a 40m high stack.
+- **Hydrogen Sulfide Emission Concentration**: 34.8 mg/Nm³.
+
+#### Dealing with Elevated Background Concentrations (Worked Example 2)
+- **Scenario**: Proposed mine in a sparsely populated area with elevated background PM10 levels.
+- **Background PM10 Levels**:
+  - Maximum 24-hour average: 41 µg/m³.
+  - Annual average: 22 µg/m³.
+
+**Result of Level 1 Assessment:**
+- **Receptor A (1000 m north)**:
+  - **24-hour average**: 63 µg/m³ (exceeds criterion of 50 µg/m³).
+  - **Annual average**: 24 µg/m³ (meets criterion of 25 µg/m³).
+
+**Result of Level 2 Assessment:**
+- **Receptor A**: No additional exceedances of the 24-hour average impact assessment criterion (50 µg/m³).
+
+### Summary of Parameters and Their Limits
+- **Hydrogen Sulfide**:
+  - Urban (≥~2000): 1.38 µg/m³
+  - Single residence (≤~2): 4.83 µg/m³
+
+- **Complex Mixtures of Odorous Air Pollutants**:
+  - Urban (≥~2000) and/or schools and hospitals: 2.0 OU
+  - Single rural residence (≤~2): 7.0 OU
+
+- **Common Conversion Factors**:
+  - Ozone (O3): 1 pphm = 21.4 µg/m³ (0°C)
+  - Carbon monoxide (CO): 1 ppm = 1.15 mg/m³ (25°C)
+
+- **Site-Specific Emission Limits**:
+  - Hydrogen Sulfide: 34.8 mg/Nm³ (Based on Worked Example 1)
+
+- **Impact Assessment**:
+  - For PM10: Level 2 assessment indicates no additional exceedances.
+**Parameters and their permissible limits:**
+
+1. **PM2.5**
+   - Description: Particulate matter less than 2.5 µm in aerodynamic equivalent diameter.
+
+2. **Point source**
+   - Description: Source of emissions of odour, generally a stack. Emissions can generally be relatively easily controlled by using waste reduction, waste minimisation and cleaner production principles or conventional emission control equipment.
+
+3. **Sensitive receptor**
+   - Description: A location where people are likely to work or reside; this may include a dwelling, school, hospital, office or public recreational area. An air quality impact assessment should also consider the location of known or likely future sensitive receptors. For hydrogen fluoride, a sensitive receptor includes land-use areas with vegetation sensitive to hydrogen fluoride, such as grapevines and stone fruit.
+
+4. **Separation distance**
+   - Description: The distance between a source and sensitive receptors (or likely future sensitive receptors).
+
+5. **Source separation**
+   - Description: The distance between two emission sources.
+
+6. **σ (Standard deviation)**
+   - Description: Standard deviation.
+
+7. **σy**
+   - Description: Initial horizontal plume spread for volume sources.
+
+8. **σz**
+   - Description: Initial vertical plume spread for volume sources.
+
+9. **Stack**
+   - Description: A vertical pipe used to vent pollutants from a process.
+
+10. **Stationary source**
+    - Description: Any premises-based activity; does not include motor vehicles.
+
+11. **TAPM**
+    - Description: CSIRO’s PC-based, 3-D prognostic model for air pollution studies.
+
+12. **Total impact**
+    - Description: The total impact of an emission source (or group of sources) and existing ambient levels of a pollutant; i.e. total impact = background levels + incremental impact.
+
+13. **TSP (Total suspended particulate matter)**
+    - Description: Total suspended particulate matter.
+
+14. **USEPA**
+    - Description: United States Environmental Protection Agency.
+
+15. **VOC (Volatile organic compound)**
+    - Description: Volatile organic compound.
+
+16. **Peak-to-mean ratio**
+    - Description: A conversion factor that adjusts mean dispersion model predictions to the peak concentrations perceived by the human nose.
+
+17. **PEF (Potency equivalency factor)**
+    - Description: Potency equivalency factor.
+
+18. **pphm**
+    - Description: Concentration in parts per hundred million.
+
+19. **ppm**
+    - Description: Concentration in parts per million.
+
+20. **PM10**
+    - Description: Particulate matter less than 10 µm in aerodynamic equivalent diameter.
+
+**Table Format:**
+
+| Parameter Name      | Limit / Description                                                                                  |
+|---------------------|------------------------------------------------------------------------------------------------------|
+| PM2.5               | Particulate matter less than 2.5 µm in aerodynamic equivalent diameter                                |
+| Point source        | Source of emissions of odour, generally a stack. Emissions can generally be relatively easily controlled by using waste reduction, waste minimisation and cleaner production principles or conventional emission control equipment. |
+| Sensitive receptor  | A location where people are likely to work or reside; this may include a dwelling, school, hospital, office or public recreational area. An air quality impact assessment should also consider the location of known or likely future sensitive receptors. For hydrogen fluoride, a sensitive receptor includes land-use areas with vegetation sensitive to hydrogen fluoride, such as grapevines and stone fruit. |
+| Separation distance | The distance between a source and sensitive receptors (or likely future sensitive receptors)          |
+| Source separation   | The distance between two emission sources                                                            |
+| σ (Standard deviation) | Standard deviation                                                                                 |
+| σy                  | Initial horizontal plume spread for volume sources                                                   |
+| σz                  | Initial vertical plume spread for volume sources                                                     |
+| Stack               | A vertical pipe used to vent pollutants from a process                                               |
+| Stationary source   | Any premises-based activity; does not include motor vehicles                                         |
+| TAPM                | CSIRO’s PC-based, 3-D prognostic model for air pollution studies                                     |
+| Total impact        | The total impact of an emission source (or group of sources) and existing ambient levels of a pollutant; i.e. total impact = background levels + incremental impact |
+| TSP                 | Total suspended particulate matter                                                                   |
+| USEPA               | United States Environmental Protection Agency                                                        |
+| VOC                 | Volatile organic compound                                                                            |
+| Peak-to-mean ratio  | A conversion factor that adjusts mean dispersion model predictions to the peak concentrations perceived by the human nose |
+| PEF                 | Potency equivalency factor                                                                           |
+| pphm                | Concentration in parts per hundred million                                                           |
+| ppm                 | Concentration in parts per million                                                                   |
+| PM10                | Particulate matter less than 10 µm in aerodynamic equivalent diameter                                |
